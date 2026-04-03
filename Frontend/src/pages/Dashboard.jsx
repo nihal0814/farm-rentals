@@ -98,7 +98,7 @@ const Dashboard = () => {
                   <img src={item.images[0] || 'https://via.placeholder.com/150'} alt={item.title} className="object-cover w-16 h-16 rounded-md" />
                   <div className="flex-1 ml-4">
                     <h3 className="font-bold text-gray-800">{item.title}</h3>
-                    <p className="text-sm text-gray-500">${item.pricing?.dailyRate} / day</p>
+                    <p className="text-sm text-gray-500">₹{item.pricing?.dailyRate} / day</p>
                   </div>
                   <div className="flex items-center space-x-3">
                     <button onClick={() => handleDelete(item._id)} className="text-sm font-semibold text-red-600 hover:text-red-800">
@@ -138,7 +138,7 @@ const Dashboard = () => {
                     <div className="mb-3 text-sm text-gray-600">
                       <p><strong>Dates:</strong> {new Date(booking.startDate).toLocaleDateString()} - {new Date(booking.endDate).toLocaleDateString()}</p>
                       {/* FIXED: Using booking.financials.totalAmount */}
-                      <p><strong>Earnings:</strong> ${booking.financials?.totalAmount}</p>
+                      <p><strong>Earnings:</strong> ₹{booking.financials?.totalAmount}</p>
                     </div>
                     
                     {/* Action Buttons for Pending Requests */}
@@ -188,7 +188,7 @@ const Dashboard = () => {
                     <div className="text-sm text-gray-600">
                       <p>{new Date(booking.startDate).toLocaleDateString()} to {new Date(booking.endDate).toLocaleDateString()}</p>
                       {/* FIXED: Using booking.financials.totalAmount */}
-                      <p className="mt-1 font-semibold text-green-700">Cost: ${booking.financials?.totalAmount}</p>
+                      <p className="mt-1 font-semibold text-green-700">Cost: ₹{booking.financials?.totalAmount}</p>
                     </div>
                   </div>
                 ))}

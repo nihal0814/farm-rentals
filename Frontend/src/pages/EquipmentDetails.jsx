@@ -100,11 +100,11 @@ const EquipmentDetails = () => {
               <h3 className="pb-2 mb-2 text-lg font-semibold border-b">Pricing</h3>
               <div className="flex justify-between mb-1">
                 <span className="text-gray-600">Daily Rate:</span>
-                <span className="font-bold text-green-600">${equipment.pricing.dailyRate}/day</span>
+                <span className="font-bold text-green-600">₹{equipment.pricing.dailyRate}/day</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-600">Security Deposit:</span>
-                <span className="font-bold text-gray-800">${equipment.pricing.depositAmount}</span>
+                <span className="font-bold text-gray-800">₹{equipment.pricing.depositAmount}</span>
               </div>
             </div>
           </div>

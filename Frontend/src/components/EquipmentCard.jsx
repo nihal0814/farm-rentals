@@ -25,7 +25,7 @@ const EquipmentCard = ({ item }) => {
         {/* Pricing and Action Button */}
         <div className="flex items-center justify-between mt-4">
           <div>
-            <span className="text-2xl font-bold text-green-600">${item.pricing.dailyRate}</span>
+            <span className="text-2xl font-bold text-green-600">₹{item.pricing.dailyRate}</span>
             <span className="text-sm text-gray-500"> / day</span>
           </div>
           

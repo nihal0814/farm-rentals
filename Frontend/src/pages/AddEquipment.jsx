@@ -123,7 +123,7 @@ const AddEquipment = () => {
           {/* Pricing */}
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             <div>
-              <label className="block mb-1 text-sm font-medium text-gray-700">Daily Rental Rate ($)</label>
+              <label className="block mb-1 text-sm font-medium text-gray-700">Daily Rental Rate (₹)</label>
               <input 
                 type="number" 
                 name="dailyRate"
@@ -136,7 +136,7 @@ const AddEquipment = () => {
               />
             </div>
             <div>
-              <label className="block mb-1 text-sm font-medium text-gray-700">Security Deposit ($)</label>
+              <label className="block mb-1 text-sm font-medium text-gray-700">Security Deposit (₹)</label>
               <input 
                 type="number" 
                 name="depositAmount"
